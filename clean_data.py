@@ -19,6 +19,7 @@ prod_group_dummies = pd.get_dummies(df['ProductGroup'], prefix='PrGrp')
 df = pd.concat([df, prod_group_dummies], axis = 1)
 
 
+
 # will leave us with three options: OROPS, EROPS, EROPS w AC
 df['Enclosure'] = df['Enclosure'].map(lambda x: 'EROPS w AC' if x == 'EROPS AC' else x)
 df['Enclosure'] = df['Enclosure'].map(lambda x: 'OROPS' if x == 'NO ROPS' else x)
@@ -27,3 +28,5 @@ df = df[df.Enclosure != 'None or Unspecified']
 #enclosure group dummies
 enc_dummies = pd.get_dummies(df['Enclosure'], prefix='Enc')
 df = pd.concat([df, enc_dummies], axis = 1)
+
+df.to_csv('predict_auction_price/data/CleanTrainData.csv')
