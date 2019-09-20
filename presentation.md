@@ -30,6 +30,9 @@ max       172.000000      99.000000    2013.000000              2.483300e+06
 ```
 
 **Which features are the most significant (that are somewhat complete)?**
+*The dictionary was helpful*
+![](predict_auction_price/images/dontknow.png)
+
 1. SalePrice
 2. Age (YearMade - saleyear)
 3. ProductGroup
