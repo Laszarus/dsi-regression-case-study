@@ -1,8 +1,7 @@
 # Heavy Equipment Predictive Linear Regression
 ## Goals
 1. Clean the heavy equipment dataset 
-2. Select releveant features
-3. Create and test model that predicts auction sale price (<.7 RMSE)
+2. Create and test model that predicts auction sale price (<.7 RMSE)
 
 ## The Data
 ```
@@ -55,3 +54,13 @@ min 	0.000000 	4750.000000 	1937.000000 	1989.000000 	-12.000000 	0.000000 	0.00
 75% 	299852.750000 	42000.000000 	2001.000000 	2009.000000 	13.000000 	0.000000 	0.000000 	0.000000 	0.000000 	0.000000 	0.000000 	0.000000 	1.000000 	0.000000 	1.000000
 max 	401124.000000 	142000.000000 	2013.000000 	2011.000000 	62.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000 	1.000000
 ```
+
+**Cleaned Data Heatmap**
+![](predict_auction_price/images/heatmapv2.png)
+Top 3 correlated with SalePrice: 
+- A/C (.48)
+- SSL (Skid Steer Loaders) (-.32)
+- Age (-.25)
+
+
+
