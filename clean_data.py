@@ -9,7 +9,7 @@ def clean():
             'Enclosure','Turbocharged', 'ProductGroup', ]]
 
     #Eliminate rows with YearMade = 1000 and calculate age column
-    df = df[df.YearMade <= 1930]
+    df = df[df.YearMade >= 1930]
     df['saleyear'] = df['saledate'].str[-9:-4].astype('int32')
     df['age'] = df['saleyear'] - df['YearMade']
 
