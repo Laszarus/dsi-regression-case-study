@@ -29,7 +29,7 @@ min       121.000000       0.000000    1000.000000              0.000000e+00
 max       172.000000      99.000000    2013.000000              2.483300e+06  
 ```
 
-**Which features are the most significant?**
+**Which features are the most significant (that are somewhat complete)?**
 1. SalePrice
 2. Age (YearMade - saleyear)
 3. ProductGroup
@@ -62,5 +62,16 @@ Top 3 correlated with SalePrice:
 - SSL (Skid Steer Loaders) (-.32)
 - Age (-.25)
 
+**Scatter plot**
+![](predict_auction_price/images/scatter.png)
 
+## Results
+```
+In [2]: run clean_data.py
+[0.5289684696650094]
+```
 
+## Future steps
+- K-folds
+- Remove excess dimensions (colinear)
+- Attempt inductive model
